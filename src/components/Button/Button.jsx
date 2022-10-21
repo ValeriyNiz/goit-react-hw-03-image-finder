@@ -1,8 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Button.module.css';
 
 const Button = props => {
-  return <div>Button</div>;
+  return (
+    <button onClick={props.onClick} className={styles.Button}>
+      Load more
+    </button>
+  );
 };
 
 Button.propTypes = {};
