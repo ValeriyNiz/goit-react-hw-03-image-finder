@@ -20,11 +20,11 @@ const ImageGallery = props => {
 };
 
 ImageGallery.propTypes = {
-  onClick: PropTypes.func,
+  onClickItem: PropTypes.func.isRequired,
   images: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.string,
-      webformatURL: PropTypes.string,
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      webformatURL: PropTypes.string.isRequired,
     })
   ),
 };

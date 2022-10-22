@@ -28,6 +28,8 @@ const Searchbar = props => {
   );
 };
 
-Searchbar.propTypes = {};
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default Searchbar;

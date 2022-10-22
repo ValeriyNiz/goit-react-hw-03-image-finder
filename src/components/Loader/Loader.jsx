@@ -16,6 +16,8 @@ const Loader = props => {
   );
 };
 
-Loader.propTypes = {};
+Loader.propTypes = {
+  isShown: PropTypes.bool.isRequired,
+};
 
 export default Loader;
